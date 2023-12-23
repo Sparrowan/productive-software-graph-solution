@@ -45,6 +45,27 @@ $ npm run start:dev
 $ npm run start:prod
 ```
 
+## The app has two endpoints: nextshorteststatus and nextShortestSeriesPath
+
+**nextshorteststatus** can be accessed via **http://localhost:3000/graph/nextShortestSeriesPath** .To use it send a post request with the data structured as:
+```json
+{
+    "transition" :["R", "A", "S"]
+}
+
+```
+ **nextShortestSeriesPath** can be accessed via **http://localhost:3000/graph/nextShortestSeriesPath** . To use it send a post request with the data structured as:
+```json
+{
+    "transition": ["R","A","S"],
+    "statuses": [4,5,2]
+}
+
+```
+
+
+
+
 ## Test
 
 ```bash
